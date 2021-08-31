@@ -1,4 +1,6 @@
 <?php
+    require_once "../models/CONNEXION/Connexion.php";
+    $loginConnexion = new Connexion();
 ?>
 
 <div class="titrePage">
@@ -14,6 +16,13 @@
             <label for="formpassword" class="form-label mt-4">Password</label>
             <input type="text" class="form-control" id="password" name="password" placeholder="Password">
         </div>
-        <button class="btn btn-lg btn-lg" type="submit" value="connexion_user" name="connexion">Connexion</button>
+        <div class=" text-center">
+            <button class="btn btn-lg btn-success m-2" type="submit" value="connexion_user" name="connexion">Connexion</button>
+        </div>
     </form>
+    <?php
+    if(isset($_POST['connexion'])){
+        $loginConnexion->VerificationConnexion();
+    }
+    ?>
 </div>
