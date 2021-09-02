@@ -1,12 +1,10 @@
 <?php
+$ideleve = $_GET['ID'];
 require_once "../models/CRUD/CRUDEleve.php";
 ?>
 <div>
     <div class="titreH1">
-        <h1>Gestion des élèves</h1>
-    </div>
-    <div>
-        <a href="neweleve" class="btn btn-lg btn-info"> AJOUTER UN NOUVEL ELEVE</a>
+        <h1>DETAIL élèves</h1>
     </div>
     <div class="tableau">
         <table class="table table-hover">
@@ -16,29 +14,20 @@ require_once "../models/CRUD/CRUDEleve.php";
                     <th scope="col">Nom</th>
                     <th scope="col">Prénom</th>
                     <th scope="col">Date de naissance</th>
-                    <th scope="col">Détails</th>
                     <th scope="col">Modifier</th>
                     <th scope="col">Supprimer</th>
                 </tr>
             </thead>
-            <?php
-            foreach ($RealAllEleves as $row){
-            ?>
-                <tbody>
+            <tbody>
                 <tr class="table-info">
-                    <th scope="col"><?=$row['id_eleve']?></th>
-                    <th scope="col"><?=$row['nom_eleve']?></th>
-                    <th scope="col"><?=$row['prenom_eleve']?></th>
-                    <th scope="col"><?=$row['date_naissance_eleve']?></th>
-                    <th scope="col"><a href="detailsEleve?ID=<?=$row['id_eleve']?>" class="btn btn-dark">Détails</a></th>
+                    <th scope="col"><?=$ReaddetailEleve['id_eleve']?></th>
+                    <th scope="col"><?=$ReaddetailEleve['nom_eleve']?></th>
+                    <th scope="col"><?=$ReaddetailEleve['prenom_eleve']?></th>
+                    <th scope="col"><?=$ReaddetailEleve['date_naissance_eleve']?></th>
                     <th scope="col"><a class="btn btn-dark">Modifier</a></th>
                     <th scope="col"><a class="btn btn-warning">X</a></th>
-
                 </tr>
-                </tbody>
-            <?php
-            }
-            ?>
+            </tbody>
 
         </table>
 

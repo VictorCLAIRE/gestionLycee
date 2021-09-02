@@ -1,4 +1,6 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
 class  Database{
     private $host = "localhost";
     private $dbname = "lycee_tartanpion";

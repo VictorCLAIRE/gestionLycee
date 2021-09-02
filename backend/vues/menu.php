@@ -15,6 +15,7 @@
             }
             else if (isset($_SESSION['connecte']) == true){
                 ?>
+                <li class="nav-item active"><a class="nav-link" href="dashboard">Dashboard</a></li>
                 <li class="nav-item active"><a class="nav-link" href="#"><?=$_SESSION['login']?></a></li>
                 <li class="nav-item active"><a class="nav-link" href="professeurs">Gestion des profs</a></li>
                 <li class="nav-item active"><a class="nav-link" href="eleves">Gestions des élèves</a></li>

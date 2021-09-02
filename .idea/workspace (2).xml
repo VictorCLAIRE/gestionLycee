@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a066eca3-ce46-4789-9931-3da9437ac49f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/vues/detailsEleve.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/vues/elevesjson.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/vues/neweleve.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/vues/newprof.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/vues/professeursjson.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/CRUD/CRUDEleve.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/CRUD/CRUDEleve.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/CRUD/CRUDProf.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/CRUD/CRUDProf.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/ClefEtrangere.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/ClefEtrangere.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/vues/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/vues/accueil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/vues/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/vues/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/vues/eleves.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/vues/eleves.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/vues/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/vues/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/vues/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/vues/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/vues/profs.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/vues/profs.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1xRD2MBo4GD93nvPfLdiqkWGWiQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Projet_backfront" />
+      <recent name="C:\wamp64\www\Projet_backfront\backend" />
+      <recent name="C:\wamp64\www\Projet_backfront\backend\vues" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a066eca3-ce46-4789-9931-3da9437ac49f" name="Default Changelist" comment="" />
+      <created>1630308800662</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1630308800662</updated>
+      <workItem from="1630308802184" duration="11689000" />
+      <workItem from="1630391642572" duration="11413000" />
+      <workItem from="1630477993614" duration="8228000" />
+      <workItem from="1630564647882" duration="604000" />
+      <workItem from="1630571053336" duration="26000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

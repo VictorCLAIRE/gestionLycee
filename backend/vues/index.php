@@ -21,7 +21,11 @@ if ($url === "accueil" || $url == "") {
 
 }elseif ($url ==="connexion"){
     $title = "connexion";
-    require_once "../vues/connexion.php";
+    if (isset($_SESSION['connecte']) == false){
+        require_once "../vues/connexion.php";
+    }else{
+        header("location:dashboard");
+    }
 
 }elseif ($url ==="deconnexion"){
     $title = "deconnexion";
@@ -29,14 +33,67 @@ if ($url === "accueil" || $url == "") {
 
 }elseif ($url ==="eleves"){
     $title = "eleves";
+    if (isset($_SESSION['connecte']) == true){
     ReadAlleleves();
+    }else{
+        header("location:connexion");
+    }
+
+}elseif ($url ==="elevesjson"){
+    $title = "elevesjson";
+    if (isset($_SESSION['connecte']) == true){
+    ReadAllelevesJSON();
+    }else{
+        header("location:connexion");
+    }
+
+}elseif ($url ==="neweleve"){
+    $title = "neweleve";
+    if (isset($_SESSION['connecte']) == true){
+        CreateNewEleve();
+    }else{
+        header("location:connexion");
+    }
+
+}elseif (($url ==="detailsEleve")&& isset($_GET['ID']) && $_GET['ID']>0){
+    $title = "detailseleve";
+    if (isset($_SESSION['connecte']) == true){
+        ReadAllDetailEleve();
+    }else{
+        header("location:connexion");
+    }
+
 }elseif ($url ==="professeurs"){
     $title = "professeurs";
+    if (isset($_SESSION['connecte']) == true){
     ReadAllprofesseur();
+    }else{
+        header("location:connexion");
+    }
+
+}elseif ($url ==="professeursjson"){
+    $title = "professeursjson";
+    if (isset($_SESSION['connecte']) == true){
+        ReadAllprofesseursJSON();
+    }else{
+        header("location:connexion");
+    }
+
+}elseif ($url ==="newprof"){
+    $title = "newprofesseurs";
+    if (isset($_SESSION['connecte']) == true){
+        CreateNewProf();
+    }else{
+        header("location:connexion");
+    }
 
 }elseif ($url ==="dashboard"){
     $title = "dashboard";
-    require_once "../vues/dashboard.php";
+    if (isset($_SESSION['connecte']) == true){
+        require_once "../vues/dashboard.php";
+    }else{
+        header("location:connexion");
+    }
 
 }else{
     $title = "Erreur 404";

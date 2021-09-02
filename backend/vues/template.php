@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="backend/assets/css/bootstrap.css">
     <link rel="stylesheet" href="backend/assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
     <title><?= $title ?></title>
 </head>
