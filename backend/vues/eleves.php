@@ -17,7 +17,6 @@ require_once "../models/CRUD/CRUDEleve.php";
                     <th scope="col">Prénom</th>
                     <th scope="col">Date de naissance</th>
                     <th scope="col">Détails</th>
-                    <th scope="col">Modifier</th>
                     <th scope="col">Supprimer</th>
                 </tr>
             </thead>
@@ -30,10 +29,8 @@ require_once "../models/CRUD/CRUDEleve.php";
                     <th scope="col"><?=$row['nom_eleve']?></th>
                     <th scope="col"><?=$row['prenom_eleve']?></th>
                     <th scope="col"><?=$row['date_naissance_eleve']?></th>
-                    <th scope="col"><a href="detailsEleve?ID=<?=$row['id_eleve']?>" class="btn btn-dark">Détails</a></th>
-                    <th scope="col"><a class="btn btn-dark">Modifier</a></th>
-                    <th scope="col"><a class="btn btn-warning">X</a></th>
-
+                    <th scope="col"><a class="btn btn-dark" href="detailsEleve?ID=<?=$row['id_eleve']?>" >Détails</a></th>
+                    <th scope="col"><a class="btn btn-warning" href="supprimerEleve?ID=<?=$row['id_eleve']?> ">X</a></th>
                 </tr>
                 </tbody>
             <?php

@@ -1,4 +1,3 @@
-
 <template>
   <div class="hello">
     <h1 class="text-center">TEST</h1>
@@ -12,7 +11,6 @@
               <th scope="col">Nom</th>
               <th scope="col">Prénom</th>
               <th scope="col">Date de naissance</th>
-              <th scope="col">Détails</th>
             </tr>
             </thead>
             <tbody>
@@ -28,7 +26,6 @@
               <th scope="col">
                 {{ eleve.date_de_naissance }}
               </th>
-              <th scope="col"><a href="" class="btn btn-dark">Détails</a></th>
             </tr>
             </tbody>
           </table>
@@ -43,7 +40,6 @@
               <th scope="col">Nom</th>
               <th scope="col">Prénom</th>
               <th scope="col">Matière</th>
-              <th scope="col">Détails</th>
             </tr>
             </thead>
             <tbody>
@@ -59,7 +55,6 @@
               <th scope="col">
                 {{ professeur.matiere }}
               </th>
-              <th scope="col"><a href="" class="btn btn-dark">Détails</a></th>
             </tr>
             </tbody>
           </table>

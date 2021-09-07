@@ -61,4 +61,16 @@
             return $res;
 
         }
+        public function DeleteEleve(){
+
+            $ideleve = $_GET['ID'];
+            $db = $this->getPDO();
+
+            $sql = "DELETE FROM `eleves` WHERE `id_eleve` = ?";
+
+            $req = $db->prepare($sql);
+
+            $req->bindParam(1,$ideleve);
+            $req->execute();
+        }
     }

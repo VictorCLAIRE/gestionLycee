@@ -37,6 +37,20 @@ require_once "../models/ClefEtrangere.php";
 
     }
 
+    function DeleteEleve(){
+
+        $DetailsEleveID = new CRUDEleve();
+        $ReaddetailEleve = $DetailsEleveID->DetailsEleve();
+
+        if (isset($_POST['btnDeleteEleve'])){
+            $DeleteEleveID = new CRUDEleve();
+            $DeleteEleve = $DeleteEleveID->DeleteEleve();
+            $DeleteEleve;
+            header("location:http://localhost/Projet_backfront/eleves");
+        }
+        require_once "../vues/supprimerEleve.php";
+    }
+
 
     function ReadAllprofesseur(){
 
@@ -64,6 +78,31 @@ require_once "../models/ClefEtrangere.php";
             header("location:http://localhost/Projet_backfront/professeurs");
         }
     }
+    function ReadAllDetailprofesseur(){
+
+        $CRUDPROF = new CRUDProf();
+        $ReaddetailProfesseur = $CRUDPROF->DetailsProfesseur();
+        require_once "../vues/detailsProfesseur.php";
+        return $ReaddetailProfesseur;
+
+    }
+    function DeleteProfesseur(){
+
+    $CRUDPROF = new CRUDProf();
+    $ReaddetailProfesseur = $CRUDPROF->DetailsProfesseur();
+
+    if (isset($_POST['btnDeleteEleve'])){
+        $CRUDPROF = new CRUDProf();
+        $deleteProfesseur = $CRUDPROF->DeleteProfesseur();
+        $deleteProfesseur;
+        header("location:http://localhost/Projet_backfront/professeurs");
+    }
+    require_once "../vues/supprimerProfesseur.php";
+}
+
+
+
+
 
 
 

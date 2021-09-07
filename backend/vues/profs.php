@@ -17,7 +17,6 @@ require_once "../models/CRUD/CRUDProf.php";
                 <th scope="col">Prénom</th>
                 <th scope="col">Matière</th>
                 <th scope="col">Détails</th>
-                <th scope="col">Modifier</th>
                 <th scope="col">Supprimer</th>
             </tr>
             </thead>
@@ -30,9 +29,8 @@ require_once "../models/CRUD/CRUDProf.php";
                     <th scope="col"><?=$row['nom_professeur']?></th>
                     <th scope="col"><?=$row['prenom_professeur']?></th>
                     <th scope="col"><?=$row['nom_matiere']?></th>
-                    <th scope="col"><a class="btn btn-dark">Détails</a></th>
-                    <th scope="col"><a class="btn btn-dark">Modifier</a></th>
-                    <th scope="col"><a class="btn btn-warning">X</a></th>
+                    <th scope="col"><a class="btn btn-dark" href="detailsProfesseur?ID=<?=$row['id_professeur']?>" >Détails</a></th>
+                    <th scope="col"><a class="btn btn-warning" href="supprimerProfesseur?ID=<?=$row['id_professeur']?> ">X</a></th>
                 </tr>
                 </tbody>
                 <?php

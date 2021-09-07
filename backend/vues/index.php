@@ -63,6 +63,14 @@ if ($url === "accueil" || $url == "") {
         header("location:connexion");
     }
 
+}elseif (($url ==="supprimerEleve")&& isset($_GET['ID']) && $_GET['ID']>0){
+    $title = "deleteeleve";
+    if (isset($_SESSION['connecte']) == true){
+        DeleteEleve();
+    }else{
+        header("location:connexion");
+    }
+
 }elseif ($url ==="professeurs"){
     $title = "professeurs";
     if (isset($_SESSION['connecte']) == true){
@@ -87,6 +95,21 @@ if ($url === "accueil" || $url == "") {
         header("location:connexion");
     }
 
+}elseif (($url ==="detailsProfesseur")&& isset($_GET['ID']) && $_GET['ID']>0){
+    $title = "detailsprofesseur";
+    if (isset($_SESSION['connecte']) == true){
+        ReadAllDetailprofesseur();
+    }else {
+        header("location:connexion");
+    }
+}elseif (($url ==="supprimerProfesseur")&& isset($_GET['ID']) && $_GET['ID']>0){
+    $title = "deleteprof";
+    if (isset($_SESSION['connecte']) == true){
+        DeleteProfesseur();
+    }else{
+        header("location:connexion");
+    }
+
 }elseif ($url ==="dashboard"){
     $title = "dashboard";
     if (isset($_SESSION['connecte']) == true){
@@ -99,6 +122,7 @@ if ($url === "accueil" || $url == "") {
     $title = "Erreur 404";
     require_once "../vues/404.php";
 }
+
 
 $content = ob_get_clean();
 
